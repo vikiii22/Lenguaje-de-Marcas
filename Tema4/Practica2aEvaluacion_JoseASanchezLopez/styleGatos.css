@@ -1,0 +1,110 @@
+/*Ponemos el body con el color de fondo, y le añdimos un borde y cambiamos la fuente*/
+body{
+    background-color: #fca49c;
+    border: #fc4c34 0.5em solid;
+    border-width: 1em;
+    margin: 0em;
+    padding: 2em;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Con la clase subrayado, subrayamso las palabras destacadas y le ponemos el estilo italic.*/
+.subrayado{
+    font-style: italic;
+    background-color: white;
+}
+/*Ponemos el título centrado y que sea inline*/
+header h1{
+    display: inline-block;
+    margin-left: 13.5em;
+    margin-right: 14em;
+    border:rgb(192, 48, 48) 0.01em solid;
+    text-align: center;
+    text-transform: uppercase;
+}
+/*Con esta clase hacemos la parte de arriba de la introducción*/
+.introduccion h1{
+    background-color: #fc4c34;
+    color: white;
+}
+/*Le ponemos el border*/
+.introduccion{
+    border-bottom:#fc4c34 0.5em solid;
+    border-left: #fc4c34 0.5em solid;
+    border-right: #fc4c34 0.5em solid;
+    padding-bottom: 4em;
+}
+/*Modificamos la imagen dentro de la introducción*/
+.introduccion img{
+    width: 7em;
+    float: right;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    margin-bottom: 0.2em;
+    padding: 0.2em;
+    border: red 0.2em solid;
+    background-color: white;
+}
+/*Modificamos la parte de arriba del apartado de las razas.*/
+.razas h1{
+    background-color: #fc4c34;
+    color: white;
+    padding-top: 0.5em;
+    }
+/*Ponemos el borde al apartado de razas*/
+.razas{
+    border-bottom:#fc4c34 0.5em solid;
+    border-left: #fc4c34 0.5em solid;
+    border-right: #fc4c34 0.5em solid;
+    padding-bottom: 4em;
+}
+/*La clase gato engloba a gato siamés y gato noruego*/
+.gato {
+    color: white;
+    margin-left: 2em;
+    margin-right: 2em;
+    border-left: #fc4c34 0.4em solid;
+    border-right: #fc4c34 0.4em solid;
+    border-bottom: #fc4c34 0.4em solid;
+    padding-bottom: 5.5em;
+    background-color: rgb(216, 120, 120);
+}
+/*Le ponemos el título de color negro*/
+.gato h1{
+    color: black;
+}
+/*modificamos la foto del gato siamés*/
+.fotosiames{
+    float: left;
+    width: 7em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    border: red 0.2em solid;
+}
+/*Con esta clase cambiamos el color de esas palabras y las ponemos en letra grande*/
+.pais{
+    text-transform: uppercase;
+    color: red;
+}
+/*Con esto le ponemos el título en negro al gato ruso*/
+.gatoRuso h1{
+    color: black;
+}
+/*Modificamos su article*/
+.gatoRuso {
+    color: white;
+    margin-left: 2em;
+    margin-right: 2em;
+    border-left: #fc4c34 0.4em solid;
+    border-right: #fc4c34 0.4em solid;
+    border-bottom: #fc4c34 0.4em solid;
+    background-color: rgb(216, 120, 120);
+}
+/*Con esto modificamos la imagen del gato Noruego.*/
+.gatoNoruego{
+    float: right;
+    width: 7em;
+    border: red 0.2em solid;
+    margin-right: 1em;
+    margin-left: 0.5em;
+}
