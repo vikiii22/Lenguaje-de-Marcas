@@ -1,0 +1,105 @@
+body{
+    background-color: #fca49c;
+    border: red 0.5em solid;
+    padding: 2em;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header h1{
+    margin-left: 13.5em;
+    margin-right: 14em;
+    border:rgb(192, 48, 48) 0.01em solid;
+    text-align: center;
+    text-transform: uppercase;
+}
+.intro{
+        border-bottom:red 0.5em solid;
+        border-left: red 0.5em solid;
+        border-right: red 0.5em solid;
+        padding-bottom: 4em;
+}
+
+.intro h1{
+    background-color: red;
+    color: white;
+}
+
+.intro img{
+    width: 7em;
+    float: right;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    margin-bottom: 0.2em;
+    padding: 0.2em;
+    border: red 0.2em solid;
+    background-color: white;
+}
+
+.razas{
+    border-bottom:red 0.5em solid;
+    border-left: red 0.5em solid;
+    border-right: red 0.5em solid;
+    padding-bottom: 4em;
+}
+
+.razas h1{
+background-color: red;
+color: white;
+padding-top: 0.5em;
+}
+
+.gato {
+    color: white;
+    margin-left: 2em;
+    margin-right: 2em;
+    border-left: red 0.4em solid;
+    border-right: red 0.4em solid;
+    border-bottom: red 0.4em solid;
+    padding-bottom: 5.5em;
+    background-color: rgb(216, 120, 120);
+}
+
+.gato h1{
+    color: black;
+}
+
+.fotosiames{
+    float: left;
+    width: 7em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    border: red 0.2em solid;
+}
+
+.especial{
+    text-transform: uppercase;
+    color: red;
+}
+
+.ruso {
+    color: white;
+    margin-left: 2em;
+    margin-right: 2em;
+    border-left: red 0.4em solid;
+    border-right: red 0.4em solid;
+    border-bottom: red 0.4em solid;
+    background-color: rgb(216, 120, 120);
+}
+
+.ruso h1{
+    color: black;
+}
+
+.gatoNoruego{
+    float: right;
+    width: 7em;
+    border: red 0.2em solid;
+    margin-right: 1em;
+    margin-left: 0.5em;
+}
+
+.subrayado{
+    font-style: italic;
+    background-color: white;
+}

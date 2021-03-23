@@ -1,0 +1,130 @@
+<html>
+    <meta charset="UTF-8">
+    <body>
+        <table width=90% class="center" class="egt" border=1>
+        <tr>
+            <td>
+                <form action="formularios.html" method="post">
+                    Identificador de nuevo usuario:
+                    <input type="text" name="Nuevo usuario" value="usu_012345"/>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="formularios.html" method="post">
+                    Nombre:
+                    <input type="text" name="nombre" value=""/>     
+                </form>
+            </td>
+            <td>
+                <form action="formularios.html" method="post">
+                    Apellidos:
+                    <input type="text" name="apellidos" value=""/>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="formularios.html" method="post">
+                    Contraseña: 
+                    <input type="password" name="Contraseña" value=""/>
+                </form>
+            </td>
+            <td>
+                <form action="formularios.html" method="post">
+                    Confirma la contraseña: 
+                    <input type="password" name="Confirmar Contraseña" value=""/>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="formularios.html" method="post">
+                    Email:
+                    <input type="email" name="Email" value=""/>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                    Sexo:
+            </td>
+            <td>
+                <form action="formularios.html" method="post">
+                    Varón: <input type="radio" name="Sexo" value="Varón">
+                    Mujer: <input type="radio" name="Sexo" value="Mujer" checked>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                    Aficiones:
+            </td>
+            <td>
+                <form action="formularios.html" method="post">
+                    Deportes <input type="checkbox" name="Aficiones" value=""/><br>
+                    Lectura <input type="checkbox" name="Aficiones" value="" checked/><br>
+                    Cine <input type="checkbox" name="Aficiones" value=""/>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                    País:
+            </td>
+            <td>
+                <select id="pais" name="pais">
+                    <option value="" selected="select">Francia</option>
+                    <option value="España">España</option>
+                    <option value="Portugal">Portugal</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Colores favoritos:
+            </td>
+            <td>
+                <select id="color" name="color" multiple="multiple">
+                    <option value="Rojo" selected>Rojo</option>
+                    <option value="Verde">Verde</option>
+                    <option value="Azul" selected>Azul</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Subir foto:
+            </td>
+            <td>
+                <input id="campo_fichero" name="campo_fichero" type="file"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Comentarios personales:
+            </td>
+            <td>
+                <textarea id="comentarios" name="descripcion" cols="40" rows="5">Escriba aquí sus comentarios</textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="reset" name="borrar" value="Resetear">
+            </td>
+            <td>
+                <input type="submit" name="enviar" value="Enviar">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input disabled value="Modificar datos usuario">
+            </td>
+        </tr>
+        </table>
+
+
+    </body>
+
+</html>

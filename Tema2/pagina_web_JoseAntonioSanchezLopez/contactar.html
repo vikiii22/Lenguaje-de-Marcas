@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contactar</title>
+    </head>
+    <body>
+        <ul>
+            <a href="index.html"><li>Volver a página inical</li></a>
+            <a href="inicio.html"><li>Inicio</li></a>
+            <a href="quienes_somos.html"><li>Quienes somos</li></a>
+            <a href="lugar.html"><li>Donde estamos</li></a>
+            <a href="catalogo.html"><li>Catalogo</li></a>
+        </ul>
+        <table width=90% class="center" class="egt" border=1>
+        <tr>
+            <td>
+                <form action="formularios.html" method="post">
+                    Identificador de nuevo usuario:
+                    <input type="text" name="Nuevo usuario" value="usu_012345"/>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="formularios.html" method="post">
+                    Nombre:
+                    <input type="text" name="nombre" value=""/>     
+                </form>
+            </td>
+            <td>
+                <form action="formularios.html" method="post">
+                    Apellidos:
+                    <input type="text" name="apellidos" value=""/>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="formularios.html" method="post">
+                    Email:
+                    <input type="email" name="Email" value=""/>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                    Sexo:
+            </td>
+            <td>
+                <form action="formularios.html" method="post">
+                    Varón: <input type="radio" name="Sexo" value="Varón">
+                    Mujer: <input type="radio" name="Sexo" value="Mujer" checked>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                    País:
+            </td>
+            <td>
+                <select id="pais" name="pais">
+                    <option value="" selected="select">Francia</option>
+                    <option value="España">España</option>
+                    <option value="Portugal">Portugal</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Subir foto:
+            </td>
+            <td>
+                <input id="campo_fichero" name="campo_fichero" type="file"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Comentarios personales:
+            </td>
+            <td>
+                <textarea id="comentarios" name="descripcion" cols="40" rows="5">Escriba aquí sus comentarios</textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="reset" name="borrar" value="Resetear">
+            </td>
+            <td>
+                <input type="submit" name="enviar" value="Enviar">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input disabled value="Modificar datos usuario">
+            </td>
+        </tr>
+        </table>
+
+
+    </body>
+</html>
