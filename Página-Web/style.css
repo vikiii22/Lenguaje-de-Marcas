@@ -1,0 +1,75 @@
+.titulo{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 3em;
+    font-style:italic;
+    text-shadow: 5px -5px black;
+}
+
+.eslogan{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    color: rgb(85, 79, 79);
+    margin-bottom: 5em;
+    margin-top: 2em;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 2em;
+    margin-left: 2em;
+    background-color: cadetblue;
+}
+
+.inicial{
+    display: block;
+    margin: auto;
+}
+
+.card{
+    margin-left: 2em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    float:left;
+    text-align: justify;
+}
+
+ul{
+    text-align: center;
+    background: white;
+}
+
+li {
+  font-size: 16px;  
+  text-transform: capitalize;
+  font-variant: initial;  
+  background-color:white;
+  display: inline;
+  padding-right:  1em;
+  margin-left: 11em;
+  margin-right: 1em;
+}
+
+footer {
+    float: inline-end;
+    margin-top: 2em;
+    position: fixed;
+    bottom: 0;
+    width: 95%;
+    height: 3%;
+    background-color: aquamarine;
+}
+
+a, a:link, a:visited, a:active{
+    color: gray;
+    text-decoration: none;
+}
+
+.btn-btn-secondary-btn-lg{
+    background-color: white;
+    background: white;
+    border:0;
+}
+
