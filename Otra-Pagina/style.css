@@ -1,0 +1,166 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    margin-left: -1em;
+    padding-right: 3em;
+    margin-top: -1em;
+    padding-top: 1em;
+    width: 101%;
+    height: 100%;
+    text-align: left;
+    background-color:rgba(0, 0, 0, 0.788);
+    color: white;
+}
+
+@keyframes palpitar{
+    from {transform: none;}
+    95% {transform: scale(1.4);}
+    to {transform: none;}
+}
+
+.cabecera{
+    font-weight: bold;
+    display: inline;
+    font-size: 2em;
+    margin-right: 21em;
+}
+
+.botones, .contacto{
+    font-weight: bold;
+    text-align: justify;
+    display: inline;
+    margin-left: 1em;
+    
+}
+
+.dropdown-menu{
+    background-color: rgb(235, 235, 235);
+}
+
+a { 
+    color: black;
+    text-decoration:none;  
+    padding: 1px 3px; 
+    -webkit-transition: color .4s linear; 
+    -moz-transition: color .4s linear; 
+    -ms-transition: color .4s linear; 
+    -o-transition: color .4s linear; 
+    transition: color .4s linear; 
+}
+
+a:hover { 
+    background: rgb(103, 168, 221); 
+    color: white; 
+    -webkit-transition: color .4s linear; 
+    -moz-transition: color .4s linear; 
+    -ms-transition: color .4s linear; 
+    -o-transition: color .4s linear; 
+    transition: color .4s linear; 
+}
+
+.cont{
+    color: black;
+    text-decoration:none;  
+    padding: 1px 3px; 
+    -webkit-transition: color .4s linear; 
+    -moz-transition: color .4s linear; 
+    -ms-transition: color .4s linear; 
+    -o-transition: color .4s linear; 
+    transition: color .4s linear;
+}
+
+.cont:hover{
+    background: rgb(103, 168, 221);
+    color: white; 
+    -webkit-transition: color .4s linear; 
+    -moz-transition: color .4s linear; 
+    -ms-transition: color .4s linear; 
+    -o-transition: color .4s linear; 
+    transition: color .4s linear; 
+}
+
+@keyframes colorines{
+    from {color: black;}
+    50% {color: white;}
+    to {color: black}
+}
+
+h2{
+    text-align: center;
+    text-shadow: 0 0 10px #222,1px 1px  0 #450505;
+    animation: colorines .9s infinite;
+    animation-duration: 2s;
+    transform-origin: center;
+}
+
+.cajas{
+    float: left;
+    margin-right: 15em;
+    margin-left: 12em;
+    
+}
+
+.cajas2{
+    float: left;
+    margin-right: 15em;
+    margin-left: 12em;
+    
+}
+
+.card{
+    width: 300px;
+    height: 100%;
+    margin-left: 2em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    float:left;
+    text-align: justify;
+}
+
+.card-body{
+    background-color: rgb(235, 235, 235);
+}
+
+.btn-primary{
+    border-color: white;
+    background-color: rgb(5, 14, 22);
+}
+
+.cajas2 .btn-primary{
+    border-color: rgb(5, 14, 22);
+    background-color: white;
+}
+
+.btn-primary:hover{
+    background: rgb(103, 168, 221); 
+    color: white; 
+    -webkit-transition: color .4s linear; 
+    -moz-transition: color .4s linear; 
+    -ms-transition: color .4s linear; 
+    -o-transition: color .4s linear; 
+    transition: color .4s linear;
+}
+
+.cajas2 .btn-primary:hover{
+    background: rgb(5, 14, 22); 
+    color: white; 
+    -webkit-transition: color .4s linear; 
+    -moz-transition: color .4s linear; 
+    -ms-transition: color .4s linear; 
+    -o-transition: color .4s linear; 
+    transition: color .4s linear;
+}
+
+.card-img-top{
+    width: 100%;
+    height: 400px;
+}
+
+ul .btn-primary{
+    margin-right: -1em;
+    border-color: transparent;
+    margin-bottom: 5px;
+    color: gray;
+}
