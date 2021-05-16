@@ -63,6 +63,7 @@ a {
 }
 
 a:hover { 
+    border-radius: 10px;
     background: rgb(103, 168, 221); 
     color: white; 
     -webkit-transition: color .4s linear; 
@@ -138,6 +139,7 @@ h2{
 .btn-primary{
     border-color: white;
     background-color: rgb(5, 14, 22);
+    z-index: 1;
 }
 
 .cajas2 .btn-primary{
@@ -249,3 +251,65 @@ textarea{
     -o-transition: color .4s linear; 
     transition: color .4s linear;
   }
+ /*Estilo de la imagen clase videojuegos*/
+  .videojuegos{
+    float: right;
+    width: 40%;
+  }
+
+  .videojuegos2{
+    float: left;
+    margin-right: 5%;
+    width: 40%;
+  }
+
+  .segundo-desarrollo{
+      margin-top: 15%;
+      margin-bottom: 22%;
+  }
+/*Estilo article clase videojuegos*/
+  .desarrollo{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  /*Estilo slider*/
+.slider{
+    width: 95%;
+    margin-right: 20%;
+    margin-left: -10%;
+    overflow: hidden;
+}
+
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: cambio 20s infinite alternate linear;
+}
+
+.slider li{
+    background-image: none;
+    width: 100%;
+    list-style: none;
+}
+
+.slider img{
+    margin-left: 36%;
+    width: 50%;
+}
+
+@keyframes cambio{
+    0% { margin-left: 0;}
+    20% { margin-left: 0;}
+
+    25% { margin-left: -100%;}
+    45% { margin-left: -100%;}
+
+    50% { margin-left: -200%;}
+    70% { margin-left: -200%;}
+
+    75% { margin-left: -300%}
+    100% { margin-left: -300%;}
+}

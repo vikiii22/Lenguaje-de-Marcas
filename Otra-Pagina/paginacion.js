@@ -14,6 +14,12 @@ sr.reveal('body', {
     distance: '1000px',
 });
 
+sr.reveal('.slider',{
+    origin: 'rigth',
+    distance: '1000px',
+    reset: true
+})
+
 sr.reveal('footer', {
     origin: 'left',
     distance: '1000px',
