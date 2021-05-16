@@ -31,13 +31,25 @@ header{
     font-weight: bold;
     text-align: justify;
     display: inline;
-    margin-left: 1em;
+    margin-left: 2.4%;
     
 }
 
 .dropdown-menu{
     background-color: rgb(235, 235, 235);
 }
+
+/*Para quitar el estilo del título en otras páginas*/
+.sin-estilo{
+    color: white;
+    background: none;
+}
+
+.sin-estilo:hover{
+    color: white;
+    background: none;
+}
+
 
 a { 
     color: black;
@@ -164,3 +176,76 @@ ul .btn-primary{
     margin-bottom: 5px;
     color: gray;
 }
+
+.titulo-form{
+    text-align: center;
+    font-weight: bold;
+}
+
+.formulario{
+    margin-top: 45%;
+    padding-left: 30%;
+    padding-right: 30%;
+    background-color: rgb(116, 114, 114);
+}
+
+.lista{
+    margin-left: 30%;
+    font-size: 2em;
+    font-weight: bold;
+    background-color: rgb(235, 235, 235);
+    text-transform: uppercase;
+}
+
+.rellenar{
+    margin-left: 35%;
+}
+
+textarea{
+    background-color: #fbfbfb; 
+    width: 405px; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px;  
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+  }
+
+  .boton-formulario{
+    color: white;
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-bottom: 20px; 
+    margin-top: 10px;   
+    text-transform: uppercase;
+    border-color: white;
+    background-color: rgb(5, 14, 22); 
+    border-style: solid; 
+    border-radius: 10px;  
+    width: 420px;   
+    cursor: pointer;
+
+  }.boton-formulario:hover{
+    color: black;
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-bottom: 20px; 
+    margin-top: 10px;   
+    text-transform: uppercase;
+    border-color: black;
+    background: rgb(103, 168, 221); 
+    border-style: solid; 
+    border-radius: 10px;  
+    width: 420px;   
+    cursor: pointer;
+    -webkit-transition: color .4s linear; 
+    -moz-transition: color .4s linear; 
+    -ms-transition: color .4s linear; 
+    -o-transition: color .4s linear; 
+    transition: color .4s linear;
+  }
