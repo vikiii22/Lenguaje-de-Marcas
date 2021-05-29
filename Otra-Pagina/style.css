@@ -1,315 +1,720 @@
-html{
-    font-family: Arial, Helvetica, sans-serif;
+/*Página de estilos Jose Antonio Sánchez López*/
+/*El código es el mismo solamente cambian algunas zonas de tamaño*/
+/*Con esto lo que hacemos es que la página se vea igual en cualquier dispositivo*/
+@media screen and (min-width: 800px) and (min-height: 600px){
+    html {
+        width: 100%;
+        float: left;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        margin-left: -1em;
+        padding-right: 3em;
+        margin-top: -1em;
+        padding-top: 1em;
+        width: 101%;
+        height: 100%;
+        text-align: left;
+        background-color: rgba(0, 0, 0, 0.788);
+        color: white;
+    }
+    @keyframes palpitar {
+        from {
+            transform: none;
+        }
+        95% {
+            transform: scale(1.4);
+        }
+        to {
+            transform: none;
+        }
+    }
+    .cabecera {
+        font-weight: bold;
+        display: inline;
+        font-size: 2em;
+        margin-right: 53%;
+    }
+    .botones, .contacto {
+        font-weight: bold;
+        text-align: justify;
+        display: inline;
+        margin-left: 2.3%;
+    }
+    .dropdown-menu {
+        background-color: rgb(235, 235, 235);
+    }
+    /*Para quitar el estilo del título en otras páginas*/
+    .sin-estilo {
+        color: white;
+        background: none;
+    }
+    .sin-estilo:hover {
+        color: white;
+        background: none;
+    }
+    a {
+        color: black;
+        text-decoration: none;
+        padding: 1px 3px;
+        -webkit-transition: color .4s linear;
+        -moz-transition: color .4s linear;
+        -ms-transition: color .4s linear;
+        -o-transition: color .4s linear;
+        transition: color .4s linear;
+    }
+    a:hover {
+        border-radius: 10px;
+        background: rgb(103, 168, 221);
+        color: white;
+        -webkit-transition: color .4s linear;
+        -moz-transition: color .4s linear;
+        -ms-transition: color .4s linear;
+        -o-transition: color .4s linear;
+        transition: color .4s linear;
+    }
+    .cont {
+        color: black;
+        text-decoration: none;
+        padding: 1px 3px;
+        -webkit-transition: color .4s linear;
+        -moz-transition: color .4s linear;
+        -ms-transition: color .4s linear;
+        -o-transition: color .4s linear;
+        transition: color .4s linear;
+    }
+    .cont:hover {
+        background: rgb(103, 168, 221);
+        color: white;
+        -webkit-transition: color .4s linear;
+        -moz-transition: color .4s linear;
+        -ms-transition: color .4s linear;
+        -o-transition: color .4s linear;
+        transition: color .4s linear;
+    }
+    @keyframes colorines {
+        from {
+            color: black;
+        }
+        50% {
+            color: white;
+        }
+        to {
+            color: black
+        }
+    }
+    h2 {
+        text-align: center;
+        text-shadow: 0 0 10px #222, 1px 1px 0 #450505;
+        animation: colorines .9s infinite;
+        animation-duration: 2s;
+        transform-origin: center;
+    }
+    .cajas {
+        float: left;
+        margin-right: 7%;
+        margin-left: 11%;
+    }
+    .cajas2 {
+        float: left;
+        margin-right: 7%;
+        margin-left: 11%;
+    }
+    .card {
+        width: 300px;
+        height: 100%;
+        margin-left: 2em;
+        margin-right: 1em;
+        margin-bottom: 1em;
+        float: left;
+        text-align: justify;
+    }
+    .card-body {
+        background-color: rgb(235, 235, 235);
+    }
+    .btn-primary {
+        border-color: white;
+        background-color: rgb(5, 14, 22);
+        z-index: 1;
+    }
+    .cajas2 .btn-primary {
+        border-color: rgb(5, 14, 22);
+        background-color: white;
+    }
+    .btn-primary:hover {
+        background: rgb(103, 168, 221);
+        color: white;
+        -webkit-transition: color .4s linear;
+        -moz-transition: color .4s linear;
+        -ms-transition: color .4s linear;
+        -o-transition: color .4s linear;
+        transition: color .4s linear;
+    }
+    .cajas2 .btn-primary:hover {
+        background: rgb(5, 14, 22);
+        color: white;
+        -webkit-transition: color .4s linear;
+        -moz-transition: color .4s linear;
+        -ms-transition: color .4s linear;
+        -o-transition: color .4s linear;
+        transition: color .4s linear;
+    }
+    .card-img-top {
+        width: 100%;
+        height: 400px;
+    }
+    ul .btn-primary {
+        margin-right: -1em;
+        border-color: transparent;
+        margin-bottom: 5px;
+        color: gray;
+    }
+    .titulo-form {
+        text-align: center;
+        font-weight: bold;
+    }
+    .formulario {
+        margin-top: 45%;
+        padding-left: 30%;
+        padding-right: 30%;
+        background-color: rgb(116, 114, 114);
+    }
+    .lista {
+        margin-left: 30%;
+        font-size: 1.5em;
+        font-weight: bold;
+        background-color: rgb(235, 235, 235);
+        text-transform: uppercase;
+    }
+    .rellenar {
+        margin-left: 35%;
+    }
+    textarea {
+        background-color: #fbfbfb;
+        width: 405px;
+        height: 150px;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+        margin-top: 10px;
+        padding-left: 10px;
+        margin-bottom: 20px;
+        padding-top: 15px;
+    }
+    .boton-formulario {
+        color: white;
+        height: 45px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        text-transform: uppercase;
+        border-color: white;
+        background-color: rgb(5, 14, 22);
+        border-style: solid;
+        border-radius: 10px;
+        width: 420px;
+        cursor: pointer;
+    }
+    .boton-formulario:hover {
+        color: black;
+        height: 45px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        text-transform: uppercase;
+        border-color: black;
+        background: rgb(103, 168, 221);
+        border-style: solid;
+        border-radius: 10px;
+        width: 420px;
+        cursor: pointer;
+        -webkit-transition: color .4s linear;
+        -moz-transition: color .4s linear;
+        -ms-transition: color .4s linear;
+        -o-transition: color .4s linear;
+        transition: color .4s linear;
+    }
+    /*Estilo de la imagen clase videojuegos*/
+    .videojuegos {
+        float: right;
+        width: 40%;
+    }
+    .videojuegos2 {
+        float: left;
+        margin-right: 5%;
+        width: 40%;
+    }
+    .segundo-desarrollo {
+        margin-top: 15%;
+        margin-bottom: 22%;
+    }
+    /*Estilo article clase videojuegos*/
+    .desarrollo {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    /*Estilo slider*/
+    .slider {
+        width: 95%;
+        margin-right: 20%;
+        margin-left: -10%;
+        overflow: hidden;
+    }
+    .slider ul {
+        display: flex;
+        padding: 0;
+        width: 400%;
+        animation: cambio 20s infinite alternate linear;
+    }
+    .slider li {
+        background-image: none;
+        width: 100%;
+        list-style: none;
+    }
+    .slider img {
+        margin-left: 36%;
+        width: 50%;
+    }
+    @keyframes cambio {
+        0% {
+            margin-left: 0;
+        }
+        20% {
+            margin-left: 0;
+        }
+        25% {
+            margin-left: -100%;
+        }
+        45% {
+            margin-left: -100%;
+        }
+        50% {
+            margin-left: -200%;
+        }
+        70% {
+            margin-left: -200%;
+        }
+        75% {
+            margin-left: -300%
+        }
+        100% {
+            margin-left: -300%;
+        }
+    }
+    .dondeEstamos {
+        margin-left: 30%;
+    }
+    .parrafo {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1em;
+        margin-left: 10%;
+        margin-right: 50%;
+        text-align: justify;
+    }
+    .imgQuienesSomos {
+        float: right;
+        width: 40%;
+        height: 40%;
+        margin-right: 5%;
+    }
+    .preguntas {
+        width: 55%;
+        margin-left: 25%;
+        margin-right: 25%;
+        padding-left: 5%;
+        padding-right: 7%;
+        border-start-end-radius: 30%;
+        border-start-start-radius: 20%;
+        border-end-start-radius: 25%;
+        background-color: rgb(116, 114, 114);
+        text-align: justify;
+    }
+    .titPFrecuentes {
+        text-align: center;
+        animation: none
+    }
+    .accesorios {
+        float: left;
+        margin-right: 7%;
+        margin-left: 11%;
+    }
+    .accesorios2 {
+        margin-right: 7%;
+        margin-left: 11%;
+        width: 80%;
+        height: 100%;
+    }
+    .mapa {
+        border-radius: 20%;
+        padding: 1%;
+        background-color: rgb(116, 114, 114);
+    }
+    .mapa:hover {
+        border-radius: 20%;
+        padding: 1%;
+        background-color: rgb(5, 14, 22);
+    }
 }
-
-header{
-    margin-left: -1em;
-    padding-right: 3em;
-    margin-top: -1em;
-    padding-top: 1em;
-    width: 101%;
-    height: 100%;
-    text-align: left;
-    background-color:rgba(0, 0, 0, 0.788);
-    color: white;
-}
-
-@keyframes palpitar{
-    from {transform: none;}
-    95% {transform: scale(1.4);}
-    to {transform: none;}
-}
-
-.cabecera{
-    font-weight: bold;
-    display: inline;
-    font-size: 2em;
-    margin-right: 21em;
-}
-
-.botones, .contacto{
-    font-weight: bold;
-    text-align: justify;
-    display: inline;
-    margin-left: 2.4%;
-    
-}
-
-.dropdown-menu{
-    background-color: rgb(235, 235, 235);
-}
-
-/*Para quitar el estilo del título en otras páginas*/
-.sin-estilo{
-    color: white;
-    background: none;
-}
-
-.sin-estilo:hover{
-    color: white;
-    background: none;
-}
-
-
-a { 
-    color: black;
-    text-decoration:none;  
-    padding: 1px 3px; 
-    -webkit-transition: color .4s linear; 
-    -moz-transition: color .4s linear; 
-    -ms-transition: color .4s linear; 
-    -o-transition: color .4s linear; 
-    transition: color .4s linear; 
-}
-
-a:hover { 
-    border-radius: 10px;
-    background: rgb(103, 168, 221); 
-    color: white; 
-    -webkit-transition: color .4s linear; 
-    -moz-transition: color .4s linear; 
-    -ms-transition: color .4s linear; 
-    -o-transition: color .4s linear; 
-    transition: color .4s linear; 
-}
-
-.cont{
-    color: black;
-    text-decoration:none;  
-    padding: 1px 3px; 
-    -webkit-transition: color .4s linear; 
-    -moz-transition: color .4s linear; 
-    -ms-transition: color .4s linear; 
-    -o-transition: color .4s linear; 
-    transition: color .4s linear;
-}
-
-.cont:hover{
-    background: rgb(103, 168, 221);
-    color: white; 
-    -webkit-transition: color .4s linear; 
-    -moz-transition: color .4s linear; 
-    -ms-transition: color .4s linear; 
-    -o-transition: color .4s linear; 
-    transition: color .4s linear; 
-}
-
-@keyframes colorines{
-    from {color: black;}
-    50% {color: white;}
-    to {color: black}
-}
-
-h2{
-    text-align: center;
-    text-shadow: 0 0 10px #222,1px 1px  0 #450505;
-    animation: colorines .9s infinite;
-    animation-duration: 2s;
-    transform-origin: center;
-}
-
-.cajas{
-    float: left;
-    margin-right: 15em;
-    margin-left: 12em;
-    
-}
-
-.cajas2{
-    float: left;
-    margin-right: 15em;
-    margin-left: 12em;
-    
-}
-
-.card{
-    width: 300px;
-    height: 100%;
-    margin-left: 2em;
-    margin-right: 1em;
-    margin-bottom: 1em;
-    float:left;
-    text-align: justify;
-}
-
-.card-body{
-    background-color: rgb(235, 235, 235);
-}
-
-.btn-primary{
-    border-color: white;
-    background-color: rgb(5, 14, 22);
-    z-index: 1;
-}
-
-.cajas2 .btn-primary{
-    border-color: rgb(5, 14, 22);
-    background-color: white;
-}
-
-.btn-primary:hover{
-    background: rgb(103, 168, 221); 
-    color: white; 
-    -webkit-transition: color .4s linear; 
-    -moz-transition: color .4s linear; 
-    -ms-transition: color .4s linear; 
-    -o-transition: color .4s linear; 
-    transition: color .4s linear;
-}
-
-.cajas2 .btn-primary:hover{
-    background: rgb(5, 14, 22); 
-    color: white; 
-    -webkit-transition: color .4s linear; 
-    -moz-transition: color .4s linear; 
-    -ms-transition: color .4s linear; 
-    -o-transition: color .4s linear; 
-    transition: color .4s linear;
-}
-
-.card-img-top{
-    width: 100%;
-    height: 400px;
-}
-
-ul .btn-primary{
-    margin-right: -1em;
-    border-color: transparent;
-    margin-bottom: 5px;
-    color: gray;
-}
-
-.titulo-form{
-    text-align: center;
-    font-weight: bold;
-}
-
-.formulario{
-    margin-top: 45%;
-    padding-left: 30%;
-    padding-right: 30%;
-    background-color: rgb(116, 114, 114);
-}
-
-.lista{
-    margin-left: 30%;
-    font-size: 2em;
-    font-weight: bold;
-    background-color: rgb(235, 235, 235);
-    text-transform: uppercase;
-}
-
-.rellenar{
-    margin-left: 35%;
-}
-
-textarea{
-    background-color: #fbfbfb; 
-    width: 405px; 
-    height: 150px; 
-    border-radius: 5px;  
-    border-style: solid; 
-    border-width: 1px;  
-    margin-top: 10px;  
-    padding-left: 10px;
-    margin-bottom: 20px; 
-    padding-top: 15px; 
-  }
-
-  .boton-formulario{
-    color: white;
-    height: 45px; 
-    padding-left: 5px;
-    padding-right: 5px;   
-    margin-bottom: 20px; 
-    margin-top: 10px;   
-    text-transform: uppercase;
-    border-color: white;
-    background-color: rgb(5, 14, 22); 
-    border-style: solid; 
-    border-radius: 10px;  
-    width: 420px;   
-    cursor: pointer;
-
-  }.boton-formulario:hover{
-    color: black;
-    height: 45px; 
-    padding-left: 5px;
-    padding-right: 5px;   
-    margin-bottom: 20px; 
-    margin-top: 10px;   
-    text-transform: uppercase;
-    border-color: black;
-    background: rgb(103, 168, 221); 
-    border-style: solid; 
-    border-radius: 10px;  
-    width: 420px;   
-    cursor: pointer;
-    -webkit-transition: color .4s linear; 
-    -moz-transition: color .4s linear; 
-    -ms-transition: color .4s linear; 
-    -o-transition: color .4s linear; 
-    transition: color .4s linear;
-  }
- /*Estilo de la imagen clase videojuegos*/
-  .videojuegos{
-    float: right;
-    width: 40%;
-  }
-
-  .videojuegos2{
-    float: left;
-    margin-right: 5%;
-    width: 40%;
-  }
-
-  .segundo-desarrollo{
-      margin-top: 15%;
-      margin-bottom: 22%;
-  }
-/*Estilo article clase videojuegos*/
-  .desarrollo{
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-
-  /*Estilo slider*/
-.slider{
-    width: 95%;
-    margin-right: 20%;
-    margin-left: -10%;
-    overflow: hidden;
-}
-
-.slider ul{
-    display: flex;
-    padding: 0;
-    width: 400%;
-
-    animation: cambio 20s infinite alternate linear;
-}
-
-.slider li{
-    background-image: none;
-    width: 100%;
-    list-style: none;
-}
-
-.slider img{
-    margin-left: 36%;
-    width: 50%;
-}
-
-@keyframes cambio{
-    0% { margin-left: 0;}
-    20% { margin-left: 0;}
-
-    25% { margin-left: -100%;}
-    45% { margin-left: -100%;}
-
-    50% { margin-left: -200%;}
-    70% { margin-left: -200%;}
-
-    75% { margin-left: -300%}
-    100% { margin-left: -300%;}
+/*Aquí entran los dispositivos con una resolución superior a 1400px, pantallas full hd*/
+@media screen and (min-width: 1400px) {
+    html {
+        width: 100%;
+        float: left;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        margin-left: -1em;
+        padding-right: 3em;
+        margin-top: -1em;
+        padding-top: 1em;
+        width: 101%;
+        height: 100%;
+        text-align: left;
+        background-color: rgba(0, 0, 0, 0.788);
+        color: white;
+    }
+    @keyframes palpitar {
+        from {
+            transform: none;
+        }
+        95% {
+            transform: scale(1.4);
+        }
+        to {
+            transform: none;
+        }
+    }
+    .cabecera {
+        font-weight: bold;
+        display: inline;
+        font-size: 2em;
+        margin-right: 57%;
+    }
+    .botones, .contacto {
+        font-weight: bold;
+        text-align: justify;
+        display: inline;
+        margin-left: 2.3%;
+    }
+    .dropdown-menu {
+        background-color: rgb(235, 235, 235);
+    }
+    /*Para quitar el estilo del título en otras páginas*/
+    .sin-estilo {
+        color: white;
+        background: none;
+    }
+    .sin-estilo:hover {
+        color: white;
+        background: none;
+    }
+    a {
+        color: black;
+        text-decoration: none;
+        padding: 1px 3px;
+        -webkit-transition: color .4s linear;
+        -moz-transition: color .4s linear;
+        -ms-transition: color .4s linear;
+        -o-transition: color .4s linear;
+        transition: color .4s linear;
+    }
+    a:hover {
+        border-radius: 10px;
+        background: rgb(103, 168, 221);
+        color: white;
+        -webkit-transition: color .4s linear;
+        -moz-transition: color .4s linear;
+        -ms-transition: color .4s linear;
+        -o-transition: color .4s linear;
+        transition: color .4s linear;
+    }
+    .cont {
+        color: black;
+        text-decoration: none;
+        padding: 1px 3px;
+        -webkit-transition: color .4s linear;
+        -moz-transition: color .4s linear;
+        -ms-transition: color .4s linear;
+        -o-transition: color .4s linear;
+        transition: color .4s linear;
+    }
+    .cont:hover {
+        background: rgb(103, 168, 221);
+        color: white;
+        -webkit-transition: color .4s linear;
+        -moz-transition: color .4s linear;
+        -ms-transition: color .4s linear;
+        -o-transition: color .4s linear;
+        transition: color .4s linear;
+    }
+    @keyframes colorines {
+        from {
+            color: black;
+        }
+        50% {
+            color: white;
+        }
+        to {
+            color: black
+        }
+    }
+    h2 {
+        text-align: center;
+        text-shadow: 0 0 10px #222, 1px 1px 0 #450505;
+        animation: colorines .9s infinite;
+        animation-duration: 2s;
+        transform-origin: center;
+    }
+    .cajas {
+        float: left;
+        margin-right: 10%;
+        margin-left: 15%;
+    }
+    .cajas2 {
+        float: left;
+        margin-right: 10%;
+        margin-left: 15%;
+    }
+    .card {
+        width: 300px;
+        height: 100%;
+        margin-left: 2em;
+        margin-right: 1em;
+        margin-bottom: 1em;
+        float: left;
+        text-align: justify;
+    }
+    .card-body {
+        background-color: rgb(235, 235, 235);
+    }
+    .btn-primary {
+        border-color: white;
+        background-color: rgb(5, 14, 22);
+        z-index: 1;
+    }
+    .cajas2 .btn-primary {
+        border-color: rgb(5, 14, 22);
+        background-color: white;
+    }
+    .btn-primary:hover {
+        background: rgb(103, 168, 221);
+        color: white;
+        -webkit-transition: color .4s linear;
+        -moz-transition: color .4s linear;
+        -ms-transition: color .4s linear;
+        -o-transition: color .4s linear;
+        transition: color .4s linear;
+    }
+    .cajas2 .btn-primary:hover {
+        background: rgb(5, 14, 22);
+        color: white;
+        -webkit-transition: color .4s linear;
+        -moz-transition: color .4s linear;
+        -ms-transition: color .4s linear;
+        -o-transition: color .4s linear;
+        transition: color .4s linear;
+    }
+    .card-img-top {
+        width: 100%;
+        height: 400px;
+    }
+    ul .btn-primary {
+        margin-right: -1em;
+        border-color: transparent;
+        margin-bottom: 5px;
+        color: gray;
+    }
+    .titulo-form {
+        text-align: center;
+        font-weight: bold;
+    }
+    .formulario {
+        margin-top: 45%;
+        padding-left: 30%;
+        padding-right: 30%;
+        background-color: rgb(116, 114, 114);
+    }
+    .lista {
+        margin-left: 30%;
+        font-size: 1.5em;
+        font-weight: bold;
+        background-color: rgb(235, 235, 235);
+        text-transform: uppercase;
+    }
+    .rellenar {
+        margin-left: 35%;
+    }
+    textarea {
+        background-color: #fbfbfb;
+        width: 405px;
+        height: 150px;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+        margin-top: 10px;
+        padding-left: 10px;
+        margin-bottom: 20px;
+        padding-top: 15px;
+    }
+    .boton-formulario {
+        color: white;
+        height: 45px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        text-transform: uppercase;
+        border-color: white;
+        background-color: rgb(5, 14, 22);
+        border-style: solid;
+        border-radius: 10px;
+        width: 420px;
+        cursor: pointer;
+    }
+    .boton-formulario:hover {
+        color: black;
+        height: 45px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        text-transform: uppercase;
+        border-color: black;
+        background: rgb(103, 168, 221);
+        border-style: solid;
+        border-radius: 10px;
+        width: 420px;
+        cursor: pointer;
+        -webkit-transition: color .4s linear;
+        -moz-transition: color .4s linear;
+        -ms-transition: color .4s linear;
+        -o-transition: color .4s linear;
+        transition: color .4s linear;
+    }
+    /*Estilo de la imagen clase videojuegos*/
+    .videojuegos {
+        float: right;
+        width: 40%;
+    }
+    .videojuegos2 {
+        float: left;
+        margin-right: 5%;
+        width: 40%;
+    }
+    .segundo-desarrollo {
+        margin-top: 15%;
+        margin-bottom: 22%;
+    }
+    /*Estilo article clase videojuegos*/
+    .desarrollo {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    /*Estilo slider*/
+    .slider {
+        width: 95%;
+        margin-right: 20%;
+        margin-left: -10%;
+        overflow: hidden;
+    }
+    .slider ul {
+        display: flex;
+        padding: 0;
+        width: 400%;
+        animation: cambio 20s infinite alternate linear;
+    }
+    .slider li {
+        background-image: none;
+        width: 100%;
+        list-style: none;
+    }
+    .slider img {
+        margin-left: 36%;
+        width: 50%;
+    }
+    @keyframes cambio {
+        0% {
+            margin-left: 0;
+        }
+        20% {
+            margin-left: 0;
+        }
+        25% {
+            margin-left: -100%;
+        }
+        45% {
+            margin-left: -100%;
+        }
+        50% {
+            margin-left: -200%;
+        }
+        70% {
+            margin-left: -200%;
+        }
+        75% {
+            margin-left: -300%
+        }
+        100% {
+            margin-left: -300%;
+        }
+    }
+    .dondeEstamos {
+        margin-left: 30%;
+    }
+    .parrafo {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1em;
+        margin-left: 10%;
+        margin-right: 50%;
+        text-align: justify;
+    }
+    .imgQuienesSomos {
+        float: right;
+        width: 40%;
+        height: 40%;
+        margin-right: 5%;
+    }
+    .preguntas {
+        width: 55%;
+        margin-left: 25%;
+        margin-right: 25%;
+        padding-left: 5%;
+        padding-right: 7%;
+        border-start-end-radius: 30%;
+        border-start-start-radius: 20%;
+        border-end-start-radius: 25%;
+        background-color: rgb(116, 114, 114);
+        text-align: justify;
+    }
+    .titPFrecuentes {
+        text-align: center;
+        animation: none
+    }
+    .accesorios {
+        float: left;
+        margin-left: 15%;
+        margin-right: 10%;
+    }
+    .accesorios2 {
+        margin-left: 15%;
+        margin-right: 10%;
+        width: 80%;
+        height: 100%;
+    }
+    .mapa {
+        border-radius: 20%;
+        padding: 1%;
+        background-color: rgb(116, 114, 114);
+    }
+    .mapa:hover {
+        border-radius: 20%;
+        padding: 1%;
+        background-color: rgb(5, 14, 22);
+    }
 }

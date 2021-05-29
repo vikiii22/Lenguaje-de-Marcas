@@ -6,7 +6,7 @@ sr.reveal('header', {
     origin: 'left',
     distance: '1000px',
     scale: 0.5,
-    delay: 1000,
+    delay: 1000
 });
 
 sr.reveal('body', {
