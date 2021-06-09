@@ -1,7 +1,8 @@
 /*Página de estilos Jose Antonio Sánchez López*/
 /*El código es el mismo solamente cambian algunas zonas de tamaño*/
 /*Con esto lo que hacemos es que la página se vea igual en cualquier dispositivo*/
-@media screen and (min-width: 800px) and (min-height: 600px){
+@media screen and (min-width: 200px){
+    /*Esto afectará a todo el código html*/
     html {
         width: 100%;
         float: left;
@@ -9,6 +10,7 @@
         margin: 0;
         padding: 0;
     }
+    /*Esto es para la cabecera*/
     header {
         margin-left: -1em;
         padding-right: 3em;
@@ -20,6 +22,7 @@
         background-color: rgba(0, 0, 0, 0.788);
         color: white;
     }
+    /*Con este keyframe hago que las letras tengan los efectos*/
     @keyframes palpitar {
         from {
             transform: none;
@@ -31,12 +34,14 @@
             transform: none;
         }
     }
+    /*Esto es para los enlaces que hay en el header*/
     .cabecera {
         font-weight: bold;
         display: inline;
         font-size: 2em;
         margin-right: 53%;
     }
+    /*Le ponemos el estilo a cada enlace*/
     .botones, .contacto {
         font-weight: bold;
         text-align: justify;
@@ -55,6 +60,7 @@
         color: white;
         background: none;
     }
+    /*Esto lo que va a hacer es darle este formato a todos los enlaces, cuando no interactues con el y cuando si se haga*/
     a {
         color: black;
         text-decoration: none;
@@ -75,6 +81,7 @@
         -o-transition: color .4s linear;
         transition: color .4s linear;
     }
+    /*Esto es para el enlace de contacto*/
     .cont {
         color: black;
         text-decoration: none;
@@ -94,6 +101,7 @@
         -o-transition: color .4s linear;
         transition: color .4s linear;
     }
+    /*Esto junto a palpitar hará que vayan cambiado de color*/
     @keyframes colorines {
         from {
             color: black;
@@ -105,6 +113,7 @@
             color: black
         }
     }
+    /*Los atributos que van a tener todos los h2*/
     h2 {
         text-align: center;
         text-shadow: 0 0 10px #222, 1px 1px 0 #450505;
@@ -112,16 +121,19 @@
         animation-duration: 2s;
         transform-origin: center;
     }
+    /*Esto es para darle forma al article del index*/
     .cajas {
         float: left;
         margin-right: 7%;
         margin-left: 11%;
     }
+    /*Esto es para darle forma al article2 del index*/
     .cajas2 {
         float: left;
         margin-right: 7%;
         margin-left: 11%;
     }
+    /*Estilo para las tarjetas*/
     .card {
         width: 300px;
         height: 100%;
@@ -134,15 +146,18 @@
     .card-body {
         background-color: rgb(235, 235, 235);
     }
+    /*Estilo botón dentro de tarjeta*/
     .btn-primary {
         border-color: white;
         background-color: rgb(5, 14, 22);
         z-index: 1;
     }
+    /*Esto es para el estilo de los botones dentro del segundo article*/
     .cajas2 .btn-primary {
         border-color: rgb(5, 14, 22);
         background-color: white;
     }
+    /*Efecto para los botones*/
     .btn-primary:hover {
         background: rgb(103, 168, 221);
         color: white;
@@ -161,6 +176,7 @@
         -o-transition: color .4s linear;
         transition: color .4s linear;
     }
+    /*Formato para la imagen*/
     .card-img-top {
         width: 100%;
         height: 400px;
@@ -171,16 +187,19 @@
         margin-bottom: 5px;
         color: gray;
     }
+    /*El titulo del formulario de contacto*/
     .titulo-form {
         text-align: center;
         font-weight: bold;
     }
+    /*Formato para el formulario de contacto*/
     .formulario {
         margin-top: 45%;
         padding-left: 30%;
         padding-right: 30%;
         background-color: rgb(116, 114, 114);
     }
+    /*Formato para la lista desplegable*/
     .lista {
         margin-left: 30%;
         font-size: 1.5em;
@@ -188,9 +207,11 @@
         background-color: rgb(235, 235, 235);
         text-transform: uppercase;
     }
+    /*Rellenado del formulario*/
     .rellenar {
         margin-left: 35%;
     }
+    /*Formato area de texto*/
     textarea {
         background-color: #fbfbfb;
         width: 405px;
@@ -203,6 +224,7 @@
         margin-bottom: 20px;
         padding-top: 15px;
     }
+    /*Formato para el botón del formulario de contacto*/
     .boton-formulario {
         color: white;
         height: 45px;
@@ -248,6 +270,7 @@
         margin-right: 5%;
         width: 40%;
     }
+    /*Formato para el article de clase videojuegos*/
     .segundo-desarrollo {
         margin-top: 15%;
         margin-bottom: 22%;
@@ -257,7 +280,7 @@
         margin-left: 10%;
         margin-right: 10%;
     }
-    /*Estilo slider*/
+    /*Estilo slider en index*/
     .slider {
         width: 95%;
         margin-right: 20%;
@@ -279,6 +302,7 @@
         margin-left: 36%;
         width: 50%;
     }
+    /*Imagenes de index que van cambiando*/
     @keyframes cambio {
         0% {
             margin-left: 0;
@@ -305,9 +329,11 @@
             margin-left: -300%;
         }
     }
+    /*Formato página donde estamos*/
     .dondeEstamos {
         margin-left: 30%;
     }
+    /*Parrafo de quienes somos*/
     .parrafo {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 1em;
@@ -315,12 +341,14 @@
         margin-right: 50%;
         text-align: justify;
     }
+    /*Formato imagen quienes somos*/
     .imgQuienesSomos {
         float: right;
         width: 40%;
         height: 40%;
         margin-right: 5%;
     }
+    /*Article con forma de bocadillo en preguntas frecuentes*/
     .preguntas {
         width: 55%;
         margin-left: 25%;
@@ -333,10 +361,12 @@
         background-color: rgb(116, 114, 114);
         text-align: justify;
     }
+    /*Titulo de preguntas frecuentes*/
     .titPFrecuentes {
         text-align: center;
         animation: none
     }
+    /*Article de accesorios*/
     .accesorios {
         float: left;
         margin-right: 7%;
@@ -348,6 +378,7 @@
         width: 80%;
         height: 100%;
     }
+    /*Formato mapa donde estamos*/
     .mapa {
         border-radius: 20%;
         padding: 1%;
@@ -359,6 +390,8 @@
         background-color: rgb(5, 14, 22);
     }
 }
+
+/*El código es el mismo, asi que creo que no hace falta comentarlo ya que solo tiene unos pequeños cambios*/
 /*Aquí entran los dispositivos con una resolución superior a 1400px, pantallas full hd*/
 @media screen and (min-width: 1400px) {
     html {
